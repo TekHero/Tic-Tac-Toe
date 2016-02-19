@@ -14,6 +14,9 @@
 		D39B04981C73B8CA001F4413 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39B04961C73B8CA001F4413 /* LaunchScreen.storyboard */; };
 		D39B04A31C73B8CA001F4413 /* Tic_Tac_ToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B04A21C73B8CA001F4413 /* Tic_Tac_ToeTests.swift */; };
 		D39B04AE1C73B8CA001F4413 /* Tic_Tac_ToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B04AD1C73B8CA001F4413 /* Tic_Tac_ToeUITests.swift */; };
+		D3B443591C74CFFF00E8548C /* NameChangeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B443581C74CFFF00E8548C /* NameChangeVC.swift */; };
+		D3B4435D1C74E83200E8548C /* RoundedEdgesLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B4435C1C74E83200E8548C /* RoundedEdgesLabel.swift */; };
+		D3B4435F1C74E8A100E8548C /* RoundedEdgesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B4435E1C74E8A100E8548C /* RoundedEdgesButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		D39B04A91C73B8CA001F4413 /* Tic-Tac-ToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tic-Tac-ToeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39B04AD1C73B8CA001F4413 /* Tic_Tac_ToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeUITests.swift; sourceTree = "<group>"; };
 		D39B04AF1C73B8CA001F4413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3B443581C74CFFF00E8548C /* NameChangeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameChangeVC.swift; sourceTree = "<group>"; };
+		D3B4435C1C74E83200E8548C /* RoundedEdgesLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEdgesLabel.swift; sourceTree = "<group>"; };
+		D3B4435E1C74E8A100E8548C /* RoundedEdgesButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEdgesButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 			children = (
 				D39B048D1C73B8CA001F4413 /* AppDelegate.swift */,
 				D39B048F1C73B8CA001F4413 /* ViewController.swift */,
+				D3B443581C74CFFF00E8548C /* NameChangeVC.swift */,
 				D39B04911C73B8CA001F4413 /* Main.storyboard */,
 				D39B04941C73B8CA001F4413 /* Assets.xcassets */,
 				D39B04961C73B8CA001F4413 /* LaunchScreen.storyboard */,
 				D39B04991C73B8CA001F4413 /* Info.plist */,
+				D3B4435C1C74E83200E8548C /* RoundedEdgesLabel.swift */,
+				D3B4435E1C74E8A100E8548C /* RoundedEdgesButton.swift */,
 			);
 			path = "Tic-Tac-Toe";
 			sourceTree = "<group>";
@@ -256,7 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B4435F1C74E8A100E8548C /* RoundedEdgesButton.swift in Sources */,
+				D3B443591C74CFFF00E8548C /* NameChangeVC.swift in Sources */,
 				D39B04901C73B8CA001F4413 /* ViewController.swift in Sources */,
+				D3B4435D1C74E83200E8548C /* RoundedEdgesLabel.swift in Sources */,
 				D39B048E1C73B8CA001F4413 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codebluapps.Tic-Tac-Toe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +498,7 @@
 				D39B04B41C73B8CA001F4413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D39B04B51C73B8CA001F4413 /* Build configuration list for PBXNativeTarget "Tic-Tac-ToeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +507,7 @@
 				D39B04B71C73B8CA001F4413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D39B04B81C73B8CA001F4413 /* Build configuration list for PBXNativeTarget "Tic-Tac-ToeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +516,7 @@
 				D39B04BA1C73B8CA001F4413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
